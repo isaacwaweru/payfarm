@@ -24,7 +24,7 @@
    </v-row>
   </div>
 
-<div class="packages">
+
   <v-container>
     <v-row justify="center" align="center">
      <v-col cols="12" sm="2">
@@ -39,145 +39,180 @@
       </v-row>
   </v-container>
 
-   <v-row justify="space-around" class="section-2">
-     <v-col
-      cols="12"
-      sm="3"
-     >
-       <v-img
-            lazy-src="../assets/register.svg"
-             max-height="80"
-             max-width="60"
-            src="../assets/register.svg"
-            class="ml-16"
-          ></v-img>
-       <h3 class="sub-head ml-16">Register</h3>
-       <p>Register using your details and get <br>verified</p>
-     </v-col>
+  <v-container>
+        <v-card
+          class="section-1 rounded-0"
+          elevation="0"
+        >
+           <v-row justify="center">
+              <v-col
+                cols="12"
+                md="3"
+              >
+                <div
+                  class="pa-4 text-center rounded-0"
+                >
+                <div class="service-card">
+                  <v-img
+                      lazy-src="../assets/register.svg"
+                      max-height="80"
+                      max-width="60"
+                      src="../assets/register.svg"
+                      class="service-img"
+                    ></v-img>
+                <h3 class="sub-head">Register</h3>
+                <p>Register using your details and get <br>verified</p>
+                </div>
+                </div>
+              </v-col>
 
-     <v-col
-     cols="12"
-      sm="3"
-     >
-       <v-img
-            lazy-src="../assets/buy.svg"
-             max-height="80"
-             max-width="60"
-            src="../assets/buy.svg"
-            class="ml-16"
-          ></v-img>
-       <h3 class="sub-head ml-6">Buy a young one</h3>
-       <p>Select your package/ animal 
-    <br>investment in a select time frame</p>
-     </v-col>
+              <v-col
+                cols="12"
+                md="3"
+              >
+                <div
+                  class="pa-4 text-center rounded-0"
+                >
+                <div class="service-card">
+                  <v-img
+                    lazy-src="../assets/buy.svg"
+                    max-height="80"
+                    max-width="60"
+                    src="../assets/buy.svg"
+                    class="service-img"
+                  ></v-img>
+                  <h3 class="sub-head">Buy a young one</h3>
+                  <p>Select your package/ animal 
+                <br>investment in a select time frame</p>
+                </div>
+                </div>
+              </v-col>
 
-     <v-col
-      cols="12"
-      sm="3"
-     >
-       <v-img
-            lazy-src="../assets/feed.svg"
-             max-height="80"
-             max-width="60"
-            src="../assets/feed.svg"
-          ></v-img>
-       <h3 class="sub-head">Feed your animal</h3>
-       <p>Feed your animal and check on<br> progress</p>
-     </v-col>
+              <v-col
+                cols="12"
+                md="3"
+              >
+                <div
+                  class="pa-4 text-center rounded-0"
+                >
+                <div class="service-card">
+                  <v-img
+                    lazy-src="../assets/feed.svg"
+                    max-height="80"
+                    max-width="60"
+                    src="../assets/feed.svg"
+                    class="service-img"
+                  ></v-img>
+                  <h3 class="sub-head">Feed your animal</h3>
+                  <p>Feed your animal and check on<br> progress</p>
+                </div>
+                </div>
+              </v-col>
+              <v-col
+                cols="12"
+                md="3"
+              >
+                <div
+                  class="pa-4 text-center rounded-0"
+                >
+                <div class="service-card">
+                  <v-img
+                    lazy-src="../assets/sell.svg"
+                    max-height="80"
+                    max-width="60"
+                    src="../assets/sell.svg"
+                    class="service-img" 
+                  ></v-img>
+              <h3 class="sub-head">Sell your chicken</h3>
+              <p>Cash out once your chicken has blossom</p>
+                </div>
+                </div>
+              </v-col>
+            </v-row>
+        </v-card>
+      </v-container>
 
-     <v-col
-      cols="12"
-      sm="3"
-     >
-       <v-img
-            lazy-src="../assets/sell.svg"
-             max-height="80"
-             max-width="60"
-            src="../assets/sell.svg"
-          ></v-img>
-       <h3 class="sub-head">Sell your chicken</h3>
-       <p>Cash out once your<br> chicken has blossom</p>
-     </v-col>
-   </v-row>
+      <v-container>
+        <v-card
+          elevation="0"
+        >
+           <v-row :class="{'ml-16': $vuetify.breakpoint.mdAndUp}">
+              <v-col
+              >
+                <div :class="{'card-1 mt-16 mb-5 ml-auto mr-auto': $vuetify.breakpoint.smAndDown, 'card-1 mt-16 mb-5': $vuetify.breakpoint.mdAndUp}">
+                  <div class="card-2">
+                    <h1 style="color:#231D4F;font-weight:500;padding-top:25px!important;" class="mt-6 ml-6">k.500 <span style="color:#848199;font-weight:300;font-size:18px;">/month</span></h1>
+                    <h2 style="color:#231D4F;font-weight:500;" class="ml-6">Chick</h2>
+                    <v-divider width="250" class="ml-6"/>
+                    <p  style="color:#848199;font-weight:5300;padding-top:5px!important;" class="ml-6 mt-4">Pay and grow your fam animals</p>
+                    <v-img
+                      lazy-src="../assets/sell.svg"
+                      max-height="120"
+                      max-width="120"
+                      src="../assets/chick.svg"  
+                      style="margin:auto!important;"
+                      class="mt-16"
+                    ></v-img>
+                  </div>
 
-    <v-row justify="space-around">
-    <v-col 
-    cols="12"
-    sm="3" >
-      <div class="card-1 mt-16 mb-5">
-        <div class="card-2">
-          <h1 style="color:#231D4F;font-weight:500;padding-top:25px!important;" class="mt-6 ml-6">k.500 <span style="color:#848199;font-weight:300;font-size:18px;">/month</span></h1>
-          <h2 style="color:#231D4F;font-weight:500;" class="ml-6">Chick</h2>
-          <v-divider width="250" class="ml-6"/>
-          <p  style="color:#848199;font-weight:5300;padding-top:5px!important;" class="ml-6 mt-4">Pay and grow your fam animals</p>
-          <v-img
-            lazy-src="../assets/sell.svg"
-             max-height="120"
-             max-width="120"
-            src="../assets/chick.svg"  
-            style="margin:auto!important;"
-            class="mt-16"
-          ></v-img>
-        </div>
+                  <div class="action">
+                    PROCEED TO BUY
+                  </div>
+                </div>
+              </v-col>
 
-        <div class="action">
-          PROCEED TO BUY
-        </div>
-      </div>
-    </v-col>
+              <v-col
+              >
+                <div :class="{'card-1-r mt-16 mb-5 ml-auto mr-auto': $vuetify.breakpoint.smAndDown, 'card-1-r mt-16 mb-5': $vuetify.breakpoint.mdAndUp}">
+                  <div class="card-2">
+                    <h1 style="color:#231D4F;font-weight:500;padding-top:25px!important;" class="mt-6 ml-6">k.500 <span style="color:#848199;font-weight:300;font-size:18px;">/month</span></h1>
+                    <h2 style="color:#231D4F;font-weight:500;" class="ml-6">Calf</h2>
+                    <v-divider width="250" class="ml-6"/>
+                    <p style="color:#848199;font-weight:5300;padding-top:5px!important;" class="ml-6 mt-4">Pay and grow your fam animals</p>
+                    <v-img
+                      lazy-src="../assets/sell.svg"
+                      max-height="130"
+                      max-width="120"
+                      src="../assets/calf.svg"
+                      style="margin:auto!important;"
+                      class="mt-16"
+                    ></v-img>
+                  </div>
 
-    <v-col 
-    cols="12"
-    sm="3" >
-      <div class="card-1-r mt-16 mb-5">
-        <div class="card-2">
-          <h1 style="color:#231D4F;font-weight:500;padding-top:25px!important;" class="mt-6 ml-6">k.500 <span style="color:#848199;font-weight:300;font-size:18px;">/month</span></h1>
-          <h2 style="color:#231D4F;font-weight:500;" class="ml-6">Calf</h2>
-          <v-divider width="250" class="ml-6"/>
-          <p style="color:#848199;font-weight:5300;padding-top:5px!important;" class="ml-6 mt-4">Pay and grow your fam animals</p>
-          <v-img
-            lazy-src="../assets/sell.svg"
-             max-height="130"
-             max-width="120"
-            src="../assets/calf.svg"
-            style="margin:auto!important;"
-            class="mt-16"
-          ></v-img>
-        </div>
+                  <div class="action">
+                    COMING SOON
+                  </div>
+                </div>
+              </v-col>
 
-        <div class="action">
-          COMING SOON
-        </div>
-      </div>
-    </v-col>
+              <v-col
+              >
+               <div :class="{'card-1-r-r mt-16 mb-5 ml-auto mr-auto': $vuetify.breakpoint.smAndDown, 'card-1-r-r mt-16 mb-5': $vuetify.breakpoint.mdAndUp}">
+                <div class="card-2">
+                  <h1 style="color:#231D4F;font-weight:500;padding-top:25px!important;" class="mt-6 ml-6">k.500 <span style="color:#848199;font-weight:300;font-size:18px;">/month</span></h1>
+                  <h2 style="color:#231D4F;font-weight:500;" class="ml-6">Kid</h2>
+                  <v-divider width="250" class="ml-6"/>
+                  <p style="color:#848199;font-weight:5300;padding-top:5px!important;" class="ml-6 mt-4">Pay and grow your fam animals</p>
+                  <v-img
+                    lazy-src="../assets/sell.svg"
+                    max-height="120"
+                    max-width="120"
+                    src="../assets/kid.svg"
+                    style="margin:auto!important;"
+                    class="mt-16"
+                  ></v-img>
+                </div>
 
-    <v-col 
-    cols="12"
-    sm="3" >
-      <div class="card-1-r-r mt-16 mb-5">
-        <div class="card-2">
-          <h1 style="color:#231D4F;font-weight:500;padding-top:25px!important;" class="mt-6 ml-6">k.500 <span style="color:#848199;font-weight:300;font-size:18px;">/month</span></h1>
-          <h2 style="color:#231D4F;font-weight:500;" class="ml-6">Kid</h2>
-          <v-divider width="250" class="ml-6"/>
-          <p style="color:#848199;font-weight:5300;padding-top:5px!important;" class="ml-6 mt-4">Pay and grow your fam animals</p>
-          <v-img
-            lazy-src="../assets/sell.svg"
-             max-height="120"
-             max-width="120"
-            src="../assets/kid.svg"
-            style="margin:auto!important;"
-            class="mt-16"
-          ></v-img>
-        </div>
+                <div class="action">
+                  COMING SOON
+                </div>
+              </div>
+              </v-col>
+            </v-row>
+        </v-card>
+      </v-container>
 
-        <div class="action">
-          COMING SOON
-        </div>
-      </div>
-    </v-col>
-
-  </v-row>
-  </div>
+    
 
 <div class="footer-1">
   <div class="form">
@@ -237,46 +272,33 @@
              max-height="150"
              max-width="120"
             src="../assets/foot.svg"
-            class="mt-9"
+            class="mt-16 service-img"
           ></v-img>
     </v-col>
   </v-row>
 
   <v-row  justify="center">
     <v-col
-    cols="12"
-    sm="3"
     >
-    <h5 style="color:#fff;font-size:14px; opacity: 0.8; font-weight:300;" class="ml-5">The best way to make invetments</h5>
+    <h5 style="color:#fff;font-size:15px; opacity: 0.8; font-weight:300;" class="footer-text">The best way to make invetments</h5>
     </v-col>
   </v-row>
 
   <v-row  justify="center">
     <v-col
-    cols="12"
-    sm="2"
     >
-    <div class="box">
-          <h5 style="color:#fff;font-size:14px; opacity: 0.8; font-weight:600;">Contact Us</h5>
-          <h5 style="color:#fff;font-size:14px; opacity: 0.8; font-weight:600;" class="ml-5">FAQs</h5>
-        </div>
+    <h5 style="color:#fff;font-size:14px; opacity: 0.8; font-weight:600;" class="footer-text">Contact Us<span style="color:#fff;font-size:14px; opacity: 0.8; font-weight:600;" class="ml-10">FAQs</span></h5>
     </v-col>
   </v-row>
 
-  <v-container>
-    <v-row  justify="center">
-    <v-col
-    cols="12"
-    sm="2"
-    >
-    <div class="box ml-4">
+  <v-container grid-list-md text-xs-center>
+    <div class="box">
       <v-icon>mdi-facebook</v-icon>
       <v-icon>mdi-twitter</v-icon>
       <v-icon>mdi-instagram</v-icon>
-        </div>
-    </v-col>
-  </v-row>
+    </div>
   </v-container>
+
 </div>
 </div>
 </template>
@@ -290,6 +312,12 @@
 </script>
 
 <style scoped>
+.footer-text {
+  text-align: center !important;
+}
+.service-img {
+  margin: 0 auto !important;
+}
 .box {
       display: flex;
       gap: 30px;
@@ -324,7 +352,7 @@
 }
 .heading-4{
   color: black;
-  text-align: center !important;765
+  text-align: center !important;
 }
 .section-2 {
   margin: auto !important;
@@ -386,7 +414,7 @@
   transform: translate(0px, -30px);
 }
 .footer-1 {
-  height: 100vh;
+  height: 6;
   width: 100%;
   background: url("../assets/footer.png");
   background-repeat: no-repeat;
@@ -394,7 +422,7 @@
 }
 .footer-2 {
   background-color: #1E2833;
-  height: auto;
+  height: 200px;
 }
 </style>
 
